@@ -18,23 +18,10 @@ html {
   background: url('./Resources/Yacine/Banner_Background_01.jpg') no-repeat;
   background-size: cover;
   height: 770px;
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
   z-index: 1;
-}
-
-.hero:before {
-  content: "";
-  position: absolute;
-  width: 60%;
-  height: 100%;
-  left: 0px;
-  top: -50px;
-  background: #0a686e;
-  opacity:.15;
-  filter: blur(60px);
-  z-index: -2;
 }
 
 nav {
@@ -328,17 +315,19 @@ nav:before {
 
 /* -- Part 02 -------------------------------------------------------------------- */
 .whiteBoard{
-  position: absolute;
+  position: relative;
   background-color: #f3f0eb;
   width: 100%;
-  Height: 1580px;
+  Height: 840px;
+  z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.17) 0px -12px 13px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.25) 0px -10px 55px;
 }
 
 .whiteBoard h1 {
   position: relative;
   text-align: center;
   color:#000000;
-  top: 810px;
+  top: 45px;
   font-family: 'Patrick Hand' ,cursive;
   font-size: 70px;
   font-weight: 400;
@@ -349,7 +338,7 @@ nav:before {
   text-align: center;
   color:#000000;
   width:95%;
-  top: 850px;
+  top: 90px;
   left:30px;
   font-family: 'Patrick Hand' ,cursive;
   font-size: 30px;
@@ -358,7 +347,7 @@ nav:before {
 
 .whiteBoard ul {
   position: relative;
-  top: 905px;
+  top: 150px;
   width: 100%;
   align-items:center;
   height: 11%;
@@ -449,6 +438,14 @@ nav:before {
 
 
 /* -- Part 03 -------------------------------------------------------------------- */
+.test {
+  background: url('./Resources/Yacine/Banner_Background_02.jpg') no-repeat;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+  left: 0;
+  right: 0;
+}
 /* -- End Part 03 -------------------------------------------------------------------- */
 
 
