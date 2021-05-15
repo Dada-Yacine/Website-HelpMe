@@ -206,6 +206,10 @@ nav:before {
   margin: 0 5%;
 }
 
+.sub-menu-list li:nth-child(2) {
+  padding-left: 55px;
+}
+
 .sub-menu-list li:nth-child(1n+4) {
   margin-top: 30px;
 }
@@ -307,7 +311,11 @@ nav:before {
 }
 
 .hero-heading h2:hover {
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+.hero-heading a {
+  text-decoration: none;
 }
 /* -- End Navigation Bar -------------------------------------------------------------------- */
 
@@ -495,7 +503,7 @@ nav:before {
   border-radius: 8px;
   padding-bottom: 20px;
   padding-top: 20px;
-  transition: transform 1s !important;
+  transition: transform .2s !important;
   align-items: center;
   text-align: center;
 }
