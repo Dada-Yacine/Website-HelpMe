@@ -121,7 +121,6 @@ nav:before {
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
-  filter: blur(0.7px)
 }
 
 .text-nav a {
@@ -162,7 +161,6 @@ nav:before {
   text-align: center;
   font-size: 12px;
   letter-spacing: 0.5px;
-  filter: blur(0.7px);
 }
 
 .text-btn-nav a {
@@ -217,7 +215,6 @@ nav:before {
   font-weight: 500;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
-  filter: blur(0.7px);
 }
 
 .sub-menu-list li a span {
@@ -227,7 +224,6 @@ nav:before {
   margin-top: 4px;
   color: rgba(255, 255, 255, 0.85);
   font-family: "Roboto", sans-serif;
-  filter: blur(0.7px);
 }
 
 .sub-menu-list li a:hover {
