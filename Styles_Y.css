@@ -184,7 +184,7 @@ nav:before {
   top: 0;
   z-index: -1;
   background-color: #009cde;
-  background-image: radial-gradient(circle farthest-side at center bottom, #00a499, #404e4d 200%);
+  background-image: radial-gradient(circle farthest-side at center bottom, #303030, #202020 100%);
 }
 
 .sub-menu-list {
@@ -300,9 +300,9 @@ nav:before {
   font-family: 'Patrick Hand' ,cursive;
   font-size: 40px;
   font-weight: 400;
-  width: 340px;
+  width: 440px;
   color: #FFFFFF;
-  margin-left: 26%;
+  margin-left: 18.5%;
   z-index: -2;
 }
 
@@ -389,7 +389,7 @@ nav:before {
 
 .whiteBoard li:hover {
   transition: all .2s ease !important;
-  background-color: #38383a;
+  background-color: #202020;/* 38383a */
   transform: translate(0px, -30px) !important;
 }
 
@@ -529,6 +529,10 @@ nav:before {
   width: 60px;
 }
 /* -- End Part 03 -------------------------------------------------------------------- */
+
+
+/* -- Part 04 -------------------------------------------------------------------- */
+/* -- End Part 04 -------------------------------------------------------------------- */
 
 
 /* -- Scroll Bar Style -------------------------------------------------------------------- */

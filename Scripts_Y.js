@@ -52,4 +52,58 @@ anime.timeline({
     duration: 1000,
     delay: 4000
   });
-  /* -- End Hero Heading Text Effect -------------------------------------------------------------------- */
+/* -- End Hero Heading Text Effect -------------------------------------------------------------------- */
+
+
+/* -- Counting Numbers Effect -------------------------------------------------------------------- */
+document.addEventListener('aos:in:inview', function() {
+var intervalId = setInterval(function() {
+	var count = $('.count');
+	count.text(parseInt(count.text())+1);
+}, 50);
+
+setTimeout(function(){
+    clearInterval(intervalId);
+},3600);});
+
+
+document.addEventListener('aos:in:inview', function() {
+var intervalId1 = setInterval(function() {
+	var count1 = $('.count1');
+	count1.text(parseInt(count1.text())+1);
+  count1.text(parseInt(count1.text())+1);
+  count1.text(parseInt(count1.text())+1);
+  count1.text(parseInt(count1.text())+1);
+  count1.text(parseInt(count1.text())+1);
+}, 2);
+
+setTimeout(function(){
+    clearInterval(intervalId1);
+},3500);});
+
+
+document.addEventListener('aos:in:inview', function() {
+var intervalId2 = setInterval(function() {
+	var count2 = $('.count2');
+	count2.text(parseInt(count2.text())+1);
+  count2.text(parseInt(count2.text())+1);
+  count2.text(parseInt(count2.text())+1);
+}, 5);
+
+setTimeout(function(){
+    clearInterval(intervalId2);
+},3500);});
+
+
+document.addEventListener('aos:in:inview', function() {
+var intervalId3 = setInterval(function() {
+	var count3 = $('.count3');
+	count3.text(parseInt(count3.text())+1);
+  count3.text(parseInt(count3.text())+1);
+  count3.text(parseInt(count3.text())+1);
+}, 50);
+
+setTimeout(function(){
+    clearInterval(intervalId3);
+},3600);});
+/* -- End Counting Numbers Effect -------------------------------------------------------------------- */
