@@ -1,0 +1,373 @@
+/* -- Fonts-------------------------------------------------------------------- */
+@import 'https://fonts.googleapis.com/css?family=Pathway+Gothic+One|Roboto:300,400,500,700';
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  font-family: "FontSansSmall-Regular", sans-serif;
+  font-weight: 600;
+}
+/* -- End Fonts-------------------------------------------------------------------- */
+
+
+/* -- Sign In Navigation Bar -------------------------------------------------------------------- */
+.hero {
+  background: url('./Resources/Yacine/Banner_Background_03.png') no-repeat;
+  background-size: cover;
+  height: 950px;
+  position:relative;
+  margin-left: -750px;
+  z-index: -5;
+}
+
+nav {
+  width: 100%;
+  height: 75px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  position: absolute;
+}
+
+nav:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0px 0px 110px 30px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  background-color: red;
+  top: -70px;
+  z-index: -1;
+}
+
+.col-nav {
+  float: left;
+  margin: 0 2.33333333%;
+  margin-left: 0px;
+  width: 50%;
+}
+
+.menu-container-nav {
+  height: 100%;
+  position: relative;
+}
+
+.menu-content-nav {
+  height: 100%;
+}
+
+.menu-content-nav li {
+  display: inline-block;
+  float: left;
+  height: 100%;
+  line-height: 72px;
+  width: 19.53125%;
+  margin: 0 2.734375%;
+  letter-spacing: 0.5px;
+}
+
+.menu-content-nav li:hover {
+  border-bottom: 2px solid #FFFFFF;
+  cursor: pointer;
+}
+
+.selected-categories:before {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  position: relative;
+  top: -1px;
+  left: -5px;
+  border: 1px solid #FFFFFF;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  transform: rotate(135deg);
+  transition: all 0.15s linear;
+}
+
+.selected-rotate:before {
+  transform: rotate(-45deg);
+  top: -1px;
+  left: -8px;
+}
+
+.text-nav {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+}
+
+.text-nav a {
+  text-decoration: none;
+}
+
+.text-nav a:link, .text-nav a:visited {
+  color: #FFFFFF;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 75px;
+  top: 0;
+  z-index: -1;
+  background-color: #009cde;
+  background-image: radial-gradient(circle farthest-side at left, #303030, #202020 70%);
+}
+
+.closer {
+  width: 100%;
+  background-color: transparent;
+  position: absolute;
+  z-index: -2;
+}
+/* -- End Sign In Navigation Bar -------------------------------------------------------------------- */
+
+
+/* -- Sign In Form -------------------------------------------------------------------- */
+.sign_in {
+  position: absolute;
+  top: 100px;
+  width: 500px;
+  height: 830px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  border: 2px solid #f3f0eb;
+  border-radius: 8px;
+  background-color: #f3f0eb;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+/* -- Inputs -------------------------------------------------------------------- */
+input {
+	outline: none;
+	border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; }
+textarea:focus::-moz-placeholder { color:transparent; }
+textarea:focus:-ms-input-placeholder { color:transparent; }
+
+input::-webkit-input-placeholder { color: #999999; }
+input:-moz-placeholder { color: #999999; }
+input::-moz-placeholder { color: #999999; }
+input:-ms-input-placeholder { color: #999999; }
+
+textarea::-webkit-input-placeholder { color: #999999; }
+textarea:-moz-placeholder { color: #999999; }
+textarea::-moz-placeholder { color: #999999; }
+textarea:-ms-input-placeholder { color: #999999; }
+/* -- Buttons -------------------------------------------------------------------- */
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+iframe {
+	border: none !important;
+}
+/* -- All Form Placeholders -------------------------------------------------------------------- */
+.login100-form {
+  width: 290px;
+}
+/* -- Text Paceholders -------------------------------------------------------------------- */
+.wrap-input100 {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.input100 {
+  font-family: Poppins-Medium;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666666;
+
+  display: block;
+  width: 100%;
+  background: #e6e6e6;
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 30px 0 68px;
+}
+/* -- Icons  -------------------------------------------------------------------- */
+.symbol-input100 {
+  font-size: 15px;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  border-radius: 25px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 35px;
+  pointer-events: none;
+  color: #666666;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.input100:focus + .focus-input100 + .symbol-input100 {
+  color: #57b846;
+  padding-left: 28px;
+}
+/* -- Log In Button -------------------------------------------------------------------- */
+.container-login100-form-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.login100-form-btn {
+  font-family: Montserrat-Bold;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+  text-transform: uppercase;
+
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  background: #57b846;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.login100-form-btn:hover {
+  background: #333333;
+}
+/* -- Positions Of Form Placeholders + Validations -------------------------------------------------------------------- */
+.validate-input {
+  position: relative;
+}
+
+.alert-validate::before {
+  content: attr(data-validate);
+  position: absolute;
+  max-width: 70%;
+  background-color: white;
+  border: 1px solid #c80000;
+  border-radius: 13px;
+  padding: 4px 25px 4px 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 8px;
+  pointer-events: none;
+
+  font-family: Poppins-Medium;
+  color: #c80000;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: left;
+
+  visibility: hidden;
+  opacity: 0;
+
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.alert-validate::after {
+  content: "\f06a";
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+  color: #c80000;
+  font-size: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 13px;
+}
+
+.alert-validate:hover:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .alert-validate::before {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+/* -- End Sign In Form -------------------------------------------------------------------- */
+
+
+/* -- Scroll Bar Style -------------------------------------------------------------------- */
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #000000;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+  background-color: #000000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FFFFFF;
+}
+/* -- End Scroll Bar Style -------------------------------------------------------------------- */

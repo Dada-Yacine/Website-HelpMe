@@ -103,8 +103,9 @@ nav:before {
   width: 9px;
   height: 9px;
   position: relative;
+  margin-right: 12px;
   top: -4px;
-  left: 6px;
+  left: 10px;
   border: 1px solid #FFFFFF;
   border-top: 1px solid transparent;
   border-left: 1px solid transparent;
@@ -268,8 +269,7 @@ nav:before {
   position: relative;
   z-index: -2;
 }
-
-/* Heading */
+/* -- Heading -------------------------------------------------------------------- */
 .hero-heading {
   text-align: center;
   position: absolute;
@@ -503,7 +503,7 @@ nav:before {
   border-radius: 8px;
   padding-bottom: 20px;
   padding-top: 20px;
-  transition: transform .2s !important;
+  transition: transform 1s !important;
   align-items: center;
   text-align: center;
 }
