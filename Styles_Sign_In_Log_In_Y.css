@@ -20,7 +20,7 @@ html {
   background: url('./Resources/Yacine/Banner_Background_04.jpg') no-repeat;
   background-size: cover;
   object-fit: fill;
-  height: 1300px;
+  height: 1250px;
   position:relative;
   margin-top: 0px;
   margin-left: -543px;
@@ -51,7 +51,7 @@ html {
   position: absolute;
   top: 40px;
   width: 500px;
-  height: 1220px;
+  height: 1170px;
   margin: auto;
   left: 0;
   right: 0;

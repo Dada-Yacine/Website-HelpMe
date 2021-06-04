@@ -297,10 +297,29 @@ nav:before {
   font-family: 'Patrick Hand' ,cursive;
   font-size: 40px;
   font-weight: 400;
-  width: 440px;
   color: #FFFFFF;
-  margin-left: 18.5%;
   z-index: -2;
+  display: inline-block;
+}
+
+.hero-heading h2:nth-child(1) {
+  -webkit-animation: mover1 .8s infinite  alternate-reverse;
+  animation: mover1 .8s infinite  alternate-reverse;
+}
+
+@-webkit-keyframes mover1 {
+    0% { transform: translateX(-10px); }
+    100% { transform: translateX(-30px); }
+}
+
+.hero-heading h2:nth-child(3) {
+  -webkit-animation: mover2 .8s infinite  alternate-reverse;
+  animation: mover2 .8s infinite  alternate-reverse;
+}
+
+@-webkit-keyframes mover2 {
+    0% { transform: translateX(10px); }
+    100% { transform: translateX(30px); }
 }
 
 .hero-heading h2:hover {
@@ -452,7 +471,7 @@ nav:before {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 100%);
   z-index: -1;
 }
 
@@ -538,7 +557,7 @@ nav:before {
   position: relative;
   background-color: #f3f0eb;
   width: 100%;
-  Height: 1050px;
+  Height: 1090px;
   z-index: 2;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.17) 0px -12px 13px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.25) 0px -10px 55px;
 }
@@ -547,7 +566,7 @@ nav:before {
   position: relative;
   text-align: center;
   color:#000000;
-  top: 45px;
+  top: 55px;
   font-family: 'Patrick Hand' ,cursive;
   font-size: 70px;
   font-weight: 400;
@@ -558,7 +577,7 @@ nav:before {
   text-align: center;
   color:#000000;
   width:90%;
-  top: 70px;
+  top: 85px;
   left:5%;
   font-family: 'Patrick Hand' ,cursive;
   font-size: 30px;
@@ -568,7 +587,7 @@ nav:before {
 .Steps_Association {
   height: 785px;
   border-radius: 8px;
-  margin-top: 110px;
+  margin-top: 150px;
   margin-left: 1.5%;
   width: 97%;
   transition: all .5s ease !important;
@@ -613,6 +632,8 @@ nav:before {
   top: 65px;
   width: 100%;
   align-items:center;
+  justify-content: center;
+  display: flex;
 }
 
 .Steps_Association li {
@@ -632,6 +653,11 @@ nav:before {
   color: #79be21;
 }
 
+.Steps_Association a:hover {
+  text-decoration: none;
+  color: CornflowerBlue;
+}
+
 .Steps_Association h4 {
   display:inline-block;
   text-align: left;
@@ -647,7 +673,6 @@ nav:before {
 .Steps_Association li:nth-child(1)  {
   padding-left: 5px;
   width:28%;
-  margin-left:1.25%;
   padding-bottom: 20px;
   padding-top: 20px;
   background-color: #202020;
@@ -716,7 +741,7 @@ nav:before {
 .Steps_Association li:nth-child(2)  {
   padding-bottom: 0px;
   padding-top: 0px;
-  margin-top: 40px;
+  margin-top: 0px;
   -webkit-animation: mover .8s infinite  alternate-reverse;
   animation: mover .8s infinite  alternate-reverse;
 }
@@ -725,7 +750,7 @@ nav:before {
 .Steps_Association li:nth-child(4)  {
   padding-bottom: 0px;
   padding-top: 0px;
-  margin-top: 40px;
+  margin-top: 0px;
   -webkit-animation: mover .8s infinite  alternate-reverse;
   animation: mover .8s infinite  alternate-reverse;
 }
@@ -773,51 +798,271 @@ nav:before {
     0% { transform: translateX(0); }
     100% { transform: translateX(+18%); }
 }
-/* -- Slide show -------------------------------------------------------------------- */
-.headWrap {
+/* -- End Part 04 -------------------------------------------------------------------- */
+
+
+/* -- Part 05 -------------------------------------------------------------------- */
+.SlideShow {
+  background: url('./Resources/Yacine/Banner_Background_05.png') no-repeat;
+  background-size: cover;
+  height: 840px;
   position: relative;
-  max-width: 1100px;
-  margin: 0 auto;
-  overflow: hidden;
+  z-index: 1;
 }
 
-.slideshow {
-  width: 300%;
-  overflow: auto;
-  -webkit-animation: slide-show 32s linear infinite;
-  -moz-animation: slide-show 32s linear infinite;
-  animation: slide-show 32s linear infinite;
+.SlideShow:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 2%, rgba(0, 0, 0, 0) 100%);
+  z-index: -1;
 }
 
-.slideshow:hover {
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  -o-animation-play-state: paused;
-  animation-play-state: paused;
+.SlideShow h1 {
+  position: absolute;
+  text-align: center;
+  color:#FFFFFF;
+  top: 60px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  font-family: 'Patrick Hand' ,cursive;
+  font-size: 60px;
+  font-weight: 400;
+  z-index: 5;
 }
 
-.slideshow img {
-  width: 11.11%;
-  float: left;
-  border: solid 5px
+.SlideShow h2 {
+  position: absolute;
+  text-align: center;
+  color:#FFFFFF;
+  width:90%;
+  top: 155px;
+  left: 5%;
+  font-family: 'Patrick Hand' ,cursive;
+  font-size: 30px;
+  font-weight: 400;
+  z-index: 5;
+}
+/* -- Slide show -------------------------------------------------------------------- */
+.SlideShow ul {
+  position: absolute;
+  width: 100%;
 }
 
-@keyframes slide-show {
-  0% {
-    -webkit-transform: translateX(0%);
-    -moz-transform: translateX(0%);
-    -o-transform: translateX(0%);
-    transform: translateX(0%);
-  }
-  100% {
-    -webkit-transform: translateX(-66.66%);
-    -moz-transform: translateX(-66.66%);
-    -o-transform: translateX(-66.66%);
-    transform: translateX(-66.66%);
-  }
+.SlideShow li {
+  display:block;
+  float:left;
+  margin-left:1%;
+}
+
+.Belt {
+  position: relative;
+  height: 450px;
+  width: 350px;
+  border: 2px solid #f3f0eb;
+  border-radius: 8px;
+  background-color: #f3f0eb;
+  top: 300px;
 }
 /* -- End Slide show -------------------------------------------------------------------- */
-/* -- End Part 04 -------------------------------------------------------------------- */
+/* -- End Part 05 -------------------------------------------------------------------- */
+
+
+/* -- Part 06 -------------------------------------------------------------------- */
+.Reviews {
+  position: relative;
+  background-color: #f3f0eb;
+  width: 100%;
+  Height: 610px;
+}
+
+.Reviews h1 {
+  position: absolute;
+  text-align: center;
+  color:#000000;
+  top: 55px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  font-family: 'Patrick Hand' ,cursive;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.Reviews ul {
+  position: relative;
+  top: 150px;
+  width: 100%;
+}
+
+.Reviews li {
+  position: relative;
+  padding-top: 50px;
+  float:left;
+  width: 27%;
+  margin-left: 4.65%;
+  background-color: #f3f0eb;
+  border: 2px solid #f3f0eb;
+  border-radius: 8px;
+}
+
+#Re01 {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.Reviews h4 {
+  display:inline-block;
+  text-align: left;
+  vertical-align: top;
+  width: 260px;
+  word-wrap : break-word;
+  color:#000000;
+  font-family: 'Patrick Hand' ,cursive;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.Reviews h5 {
+  text-align: right;
+  color:#000000;
+  font-family: 'Patrick Hand' ,cursive;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+/* -- End Part 06 -------------------------------------------------------------------- */
+
+
+/* -- Footer -------------------------------------------------------------------- */
+.Footer {
+  background-color: #202020;
+  background-size: cover;
+  height: 585px;
+  position: relative;
+  padding-top: 40px;
+}
+
+.Footer ul {
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.Footer li {
+  float:left;
+  text-align: left;
+}
+
+.Footer li:nth-child(2) , .Footer li:nth-child(3) {
+  margin-left: 5.5%;
+}
+
+.Contact {
+  position: relative;
+  text-align: left;
+  height: 340px;
+  width: 350px;
+  top: 80px;
+}
+
+.Contact a , .Contact h2 {
+  text-decoration: none;
+  color: grey;
+  margin-top: 15px;
+  font-family: 'Patrick Hand' ,cursive;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.Contact a:hover , .Contact h2:hover {
+  text-decoration: none;
+  color: #79be21;
+}
+
+.Contact h1 {
+  position: absolute;
+  color: white;
+  font-family: 'Patrick Hand' ,cursive;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.Contact span {
+		display: block;
+		width: 50px;
+		height: 1px;
+		background-color: #F60;
+}
+
+.Links {
+  position: relative;
+  top: 50px;
+}
+
+hr {
+  position: relative;
+  height: 1px;
+  border: none;
+  top: 40px;
+}
+
+hr:before,
+hr:after {
+  position: absolute;
+  height: 10px;
+  border-radius: 50%;
+  content: "";
+}
+
+hr:before { left: 0; }
+hr:after  { right: 0; }
+
+hr.red, hr.red:before, hr.red:after {
+  background-color: #79be21;
+}
+
+.Info h2 {
+  position: relative;
+  top: 50px;
+}
+
+.Separater {
+  position: relative;
+  top: 75px;
+}
+
+.Separater1 {
+  position: relative;
+  top: 150px;
+}
+
+.Separater2 {
+  position: relative;
+  top: 285px;
+  text-align: center;
+}
+
+.Separater2 hr {
+  position: relative;
+  top: 250px;
+  width: 90%;
+}
+
+.Separater2 h2 {
+  position: relative;
+  top: 250px;
+  text-decoration: none;
+  color: grey;
+  margin-top: 15px;
+}
+/* -- End Footer -------------------------------------------------------------------- */
 
 
 /* -- Scroll Bar Style -------------------------------------------------------------------- */
@@ -835,9 +1080,3 @@ body::-webkit-scrollbar-thumb {
   background-color: #FFFFFF;
 }
 /* -- End Scroll Bar Style -------------------------------------------------------------------- */
-
-
-/* -- Remove At The End -------------------------------------------------------------------- */
-body {
-  height: 9000px;
-}

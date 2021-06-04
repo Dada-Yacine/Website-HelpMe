@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="./Packages/Website_Fonts/Font-Awesome-4.7/css/Font-Awesome.min.css">
 	<link rel="stylesheet" href="./Packages/FilePond/Normalize.min.css">
 	<link rel='stylesheet' href='./Packages/FilePond/FilePond-Plugin-Image-Preview.min.css'>
+	<link rel='stylesheet' href='./Packages/FilePond/FilePond-Plugin-Pdf-Preview.min.css'>
 	<link href="./Packages/FilePond/FilePond.css" rel="stylesheet" />
 </head>
 <body>
@@ -19,7 +20,7 @@
 			<h1><a href="./Web_Accueil_Y.html" class="return">←</a>Formulaire d'inscription</h1>
 			<form class="login100-form validate-form">
 				<div class="Avatar_Drop">
-					<input type="file" class="filepond" name="filepond" accept="image/png, image/jpeg, image/gif" id="Avatar_Drop" />
+					<input type="file" class="filepond1" name="filepond1" accept="image/png, image/jpeg, image/gif" id="Avatar_Drop" data-max-file-size="15MB" data-max-files="1"/>
 				</div>
 				<div class="wrap-input100 validate-input" data-validate="Un Nom d'association est requis">
 					<input class="input100" type="text" name="nom_association" placeholder="Nom d'association">
@@ -64,14 +65,7 @@
 					</span>
 				</div>
 				<div class="Certificate_Drop">
-					<input type="file" name="filepond" multiple data-max-file-size="8MB" data-max-files="1" id="Certificate_Drop">
-				</div>
-				<div class="wrap-input100 validate-input" data-validate="Un E-mail PayPal valide est requis">
-					<input class="input100" type="text" name="email_paypal" placeholder="E-mail PayPal">
-					<span class="focus-input100"></span>
-					<span class="symbol-input100">
-						<i class="fa fa-paypal" aria-hidden="true"></i>
-					</span>
+					<input type="file" name="filepond2" multiple data-max-file-size="15MB" data-max-files="1" id="Certificate_Drop">
 				</div>
 				<div class="wrap-input100 validate-input" data-validate="Des coordonnées CCP valides sont requises">
 					<input class="input100" type="text" name="ccp" placeholder="N° de compte CCP - Clé CCP">
@@ -99,6 +93,7 @@
 	<script src='./Packages/FilePond/FilePond-Plugin-Image-Crop.min.js'></script>
 	<script src='./Packages/FilePond/FilePond-Plugin-Image-Resize.min.js'></script>
 	<script src='./Packages/FilePond/FilePond-Plugin-Image-Transform.min.js'></script>
+	<script src='./Packages/FilePond/FilePond-Plugin-Pdf-Preview.min.js'></script>
 	<script src="./Packages/FilePond/FilePond.js"></script>
 	<script>
 		FilePond.registerPlugin(
@@ -109,11 +104,12 @@
 			FilePondPluginImagePreview,
 			FilePondPluginImageCrop,
 			FilePondPluginImageResize,
-			FilePondPluginImageTransform
+			FilePondPluginImageTransform,
+			FilePondPluginPdfPreview
 		);
 		FilePond.create(
 			document.querySelector('input[id="Avatar_Drop"]'), {
-				labelIdle: `Déposez ici le logo de votre association ou <span class="filepond--label-action">Parcourir</span>`,
+				labelIdle: `Déposez ici le logo de votre association ou <span class="filepond--label-action" style="color:CornflowerBlue;">Parcourir</span>`,
 				imagePreviewHeight: 170,
 				imageCropAspectRatio: '1:1',
 				imageResizeTargetWidth: 200,
@@ -128,10 +124,13 @@
 
 		FilePond.create(
 			document.querySelector('input[id="Certificate_Drop"]'), {
-				labelIdle: `Déposez ici le certificat fourni par l'état qui prouve que vous êtes une association valide ou <span class="filepond--label-action">Parcourir</span>`,
+				labelIdle: `Déposez ici le certificat fourni par l'état qui prouve que vous êtes une association valide ou <span class="filepond--label-action" style="color:CornflowerBlue;">Parcourir</span>`,
 				imagePreviewHeight: 195,
 				imageResizeTargetWidth: 100,
 				imageResizeTargetHeight: 225,
+				allowPdfPreview: true,
+    		pdfPreviewHeight: 200,
+    		pdfComponentExtraParams: 'toolbar=0&view=fit&page=1'
 			}
 		);
 		const inputElement1 = document.querySelector('input[id="Certificate_Drop"]');

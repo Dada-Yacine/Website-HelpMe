@@ -39,7 +39,35 @@ anime.timeline({
     delay: (el, i) => 50 * (i + 1)
   });
 
-var textWrapper = document.querySelector('.hero-heading h2');
+var textWrapper = document.querySelector('.hero-heading h2:nth-child(1)');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({
+    loop: false
+  })
+  .add({
+    targets: '.hero-heading h2 .letter',
+    opacity: [0, 1],
+    easing: "easeInOutQuad",
+    duration: 1000,
+    delay: 4000
+  });
+
+var textWrapper = document.querySelector('.hero-heading h2:nth-child(2)');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({
+    loop: false
+  })
+  .add({
+    targets: '.hero-heading h2 .letter',
+    opacity: [0, 1],
+    easing: "easeInOutQuad",
+    duration: 1000,
+    delay: 4000
+  });
+
+var textWrapper = document.querySelector('.hero-heading h2:nth-child(3)');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 anime.timeline({
