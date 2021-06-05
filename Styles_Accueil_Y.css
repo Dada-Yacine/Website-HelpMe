@@ -1046,6 +1046,7 @@ hr.red, hr.red:before, hr.red:after {
 .Separater2 {
   position: relative;
   top: 285px;
+  height: 0;
   text-align: center;
 }
 
