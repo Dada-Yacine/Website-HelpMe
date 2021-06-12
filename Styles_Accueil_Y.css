@@ -805,18 +805,9 @@ nav:before {
 .SlideShow {
   background: url('./Resources/Yacine/Banner_Background_05.png') no-repeat;
   background-size: cover;
-  height: 840px;
+  height: 860px;
   position: relative;
   z-index: 1;
-}
-
-.SlideShow:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 2%, rgba(0, 0, 0, 0) 100%);
-  z-index: -1;
 }
 
 .SlideShow h1 {
@@ -846,25 +837,109 @@ nav:before {
   z-index: 5;
 }
 /* -- Slide show -------------------------------------------------------------------- */
-.SlideShow ul {
-  position: absolute;
-  width: 100%;
-}
-
-.SlideShow li {
-  display:block;
-  float:left;
-  margin-left:1%;
+.my-slider {
+  position: relative;
+  margin-top: 310px;
 }
 
 .Belt {
-  position: relative;
-  height: 450px;
+  height: 490px;
   width: 350px;
   border: 2px solid #f3f0eb;
   border-radius: 8px;
   background-color: #f3f0eb;
-  top: 300px;
+  margin-left: 25px;
+}
+
+.img_card {
+  margin-top: 11.5px;
+  margin-left: 12.5px;
+  border-radius: 8px;
+  width: 320px;
+}
+
+.my-slider h1 {
+  position: relative;
+  text-align:left;
+  color: #79be21;
+  top: 10px;
+  width: 320px;
+  word-wrap : break-word;
+  font-family: 'Patrick Hand' ,cursive;
+  font-size: 30px;
+  font-weight: 400;
+  left: 4px;
+}
+
+.my-slider h2 {
+  position: relative;
+  text-align:left;
+  color: black;
+  top: 20px;
+  width: 320px;
+  height: 100px;
+  word-wrap : break-word;
+  font-family: 'Patrick Hand' ,cursive;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.progress {
+  text-align: left;
+  text-indent: 10px;
+  width: 310px;
+  height: 18px;
+  top: 40px;
+  margin: 0 auto;
+  color: white;
+  padding-bottom: 2.5px;
+  font-family: 'Patrick Hand' ,cursive;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.progress-wrap {
+  background: #79be21;
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+}
+
+.progress-bar {
+  background: #ddd;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.btn_card {
+  top: 60px;
+  position: relative;
+  text-align: center;
+  height: 35px;
+  width: 70px;
+  margin-left: 18px;
+  font-family: 'Patrick Hand' ,cursive;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  background-color: #79be21;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn_card1 {
+  top: 60px;
+  position: relative;
+  text-align: center;
+  height: 35px;
+  width: 70px;
+  margin-left: 5px;
+  font-family: 'Patrick Hand' ,cursive;
+  font-size: 20px;
+  font-weight: 400;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 /* -- End Slide show -------------------------------------------------------------------- */
 /* -- End Part 05 -------------------------------------------------------------------- */
@@ -945,7 +1020,7 @@ nav:before {
   background-size: cover;
   height: 585px;
   position: relative;
-  padding-top: 40px;
+  padding-top: 1px;
 }
 
 .Footer ul {

@@ -3,6 +3,12 @@ var openMenucategories = document.querySelector(".open-menu-categories");
 var categoriesMenu = document.querySelector(".categories");
 var selectedcategories = document.querySelector(".selected-categories");
 var closeMenucategories = document.querySelector(".close-menu-categories");
+var accountButton = document.querySelector(".accueil_button");
+var associationButton = document.querySelector(".association_button");
+var aboutUsButton = document.querySelector(".about_us_button");
+var lsbutton = document.querySelector(".LS_button");
+var logobutton = document.querySelector(".Logo_button");
+
 
 openMenucategories.onmouseover = categories;
 
@@ -16,6 +22,11 @@ var closer = document.querySelector(".closer");
 
 closeMenucategories.onclick = close;
 closer.onmouseover = close;
+accountButton.onmouseover = close;
+associationButton.onmouseover = close;
+aboutUsButton.onmouseover = close;
+lsbutton.onmouseover = close;
+logobutton.onmouseover = close;
 
 function close() {
   categoriesMenu.style.display = "none";
@@ -135,3 +146,23 @@ setTimeout(function(){
     clearInterval(intervalId3);
 },3600);});
 /* -- End Counting Numbers Effect -------------------------------------------------------------------- */
+
+
+/* -- Progress Bar Effect -------------------------------------------------------------------- */
+document.addEventListener('aos:in:cards', function() {
+
+moveProgressBar();
+
+function moveProgressBar() {
+  console.log("moveProgressBar");
+  var getPercent = ($('.progress-wrap').data('progress-percent') / 100);
+  var getProgressWrapWidth = $('.progress-wrap').width();
+  var progressTotal = getPercent * getProgressWrapWidth;
+  var animationLength = 2500;
+
+  $('.progress-bar').stop().animate({
+      left: progressTotal
+  }, animationLength);
+}
+});
+/* -- End Progress Bar Effect -------------------------------------------------------------------- */
