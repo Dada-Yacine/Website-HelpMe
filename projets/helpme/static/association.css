@@ -350,7 +350,6 @@ nav:before {
 }
 .card {
   margin-right: 1em 1rem;
-  min-width: 20rem !important;
   background-color: rgba(49, 48, 51, 0.82) !important;
   height: 30rem;
   border-radius: 5px;
